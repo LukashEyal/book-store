@@ -1,0 +1,33 @@
+.long-txt {
+    width: 100%;
+    padding: 1em;
+    background: linear-gradient(135deg, #1a1a2e, #2d2d4a);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a64aff;
+    color: #fff;
+    text-shadow: 0 0 2px #a64aff;
+}
+
+.long-txt p.txt {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #d6c9ff;
+}
+
+.show-txt-btn {
+    background-color: transparent;
+    border: none;
+    padding-inline: 0;
+    color: #a64aff;
+    font-weight: 600;
+    cursor: pointer;
+    text-shadow: 0 0 3px #a64aff;
+    transition: color 0.3s ease;
+}
+
+.show-txt-btn:hover {
+    text-decoration: underline;
+    color: #fff;
+    text-shadow: 0 0 5px #a64aff, 0 0 10px #a64aff;
+}

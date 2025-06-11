@@ -1,0 +1,41 @@
+.books-filter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #1a1a2e, #0f0c29);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a64aff, 0 0 20px #a64aff;
+    margin: 20px auto;
+    max-width: 980px;
+}
+
+
+
+.books-filter select,
+.books-filter button,
+.books-filter input {
+    background-color: #1a1a2e;
+    border: 2px solid #a64aff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #a64aff;
+    transition: all 0.3s ease;
+}
+
+.books-filter select:hover,
+.books-filter button:hover,
+.books-filter input:hover {
+    box-shadow: 0 0 5px #a64aff, 0 0 10px #a64aff;
+    cursor: pointer;
+}
+
+
+.books-filter h3 {
+    color: #a64aff;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #a64aff, 0 0 10px #a64aff;
+    margin-right: 10px;
+}

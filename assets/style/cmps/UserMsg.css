@@ -1,0 +1,36 @@
+.user-msg {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+
+    right: 0.5em;
+    bottom: 0.5em;
+    padding: 12px 20px;
+    font-size: 1em;
+
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(166, 74, 255, 0.6);
+    background-color: #1a1a2e;
+    color: #fff;
+    text-shadow: 0 0 3px #a64aff;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Success message - neon green style */
+.success {
+    background: linear-gradient(135deg, #1a1a2e, #004d40);
+    box-shadow: 0 0 10px #00ff9d, 0 0 20px #00ff9d;
+    color: #00ff9d;
+    text-shadow: 0 0 5px #00ff9d;
+}
+
+/* Error message - neon pink/red style */
+.error {
+    background: linear-gradient(135deg, #1a1a2e, #4a003e);
+    box-shadow: 0 0 10px #ff4da6, 0 0 20px #ff4da6;
+    color: #ff4da6;
+    text-shadow: 0 0 5px #ff4da6;
+}

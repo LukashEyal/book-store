@@ -1,0 +1,51 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.star-rating span {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: default;
+    padding: 0;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.star-rating.edit span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.star-rating button:hover {
+    background-color: inherit;
+}
+
+.star-rating .star {
+    font-size: 1.4rem;
+}
+
+/* Active stars (glowing gold) */
+.star-rating .on {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+}
+
+/* Inactive stars (non-edit mode) */
+.star-rating .off {
+    color: #2a2a2a;
+}
+
+/* Inactive stars in edit mode (cyberpunk purple) */
+.star-rating.edit .off {
+    color: #a64aff;
+    text-shadow: 0 0 3px #a64aff;
+}
+
+/* Hover effect in edit mode */
+.star-rating.edit span:hover .star {
+    transform: scale(1.2);
+    color: #ffffff;
+    text-shadow: 0 0 6px #a64aff, 0 0 12px #a64aff;
+}

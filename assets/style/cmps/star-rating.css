@@ -1,0 +1,52 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.star-rating span {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: default;
+    padding: 0;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.star-rating.edit span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.star-rating button:hover {
+    background-color: inherit;
+}
+
+.star-rating .star {
+    font-size: 1.4rem;
+    transition: transform 0.2s ease;
+}
+
+/* Active stars */
+.star-rating .on {
+    color: #ffd700; /* Neon gold */
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+}
+
+/* Inactive (read-only) stars */
+.star-rating .off {
+    color: #2c2c2c;
+}
+
+/* Inactive in edit mode */
+.star-rating.edit .off {
+    color: #a64aff;
+    text-shadow: 0 0 3px #a64aff;
+}
+
+/* Optional hover effect in edit mode */
+.star-rating.edit span:hover .star {
+    transform: scale(1.2);
+    color: #fff;
+    text-shadow: 0 0 5px #a64aff, 0 0 10px #a64aff;
+}

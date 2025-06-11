@@ -1,0 +1,49 @@
+.book-prev {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg, #1a1a2e, #2d2d4a);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a64aff;
+    color: #fff;
+    text-shadow: 0 0 3px #a64aff;
+}
+
+.read-more {
+    color: #00bfff;
+    font-weight: bold;
+    text-shadow: 0 0 3px #00bfff;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.read-more:hover {
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff;
+}
+
+
+.book-nav {
+    display: flex;
+    align-self: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.book-nav button {
+    padding: 6px 12px;
+    background: #1a1a2e;
+    border: 2px solid #a64aff;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 5px #a64aff;
+}
+
+.book-nav button:hover {
+    background: #8e2de2;
+    box-shadow: 0 0 10px #8e2de2, 0 0 20px #8e2de2;
+}
