@@ -7,7 +7,7 @@ export function BookPreview({ book }) {
         <img src={book.thumbnail} alt="" />
         <p><span className='bold-txt'>Price:</span> {listPrice.amount}</p>
         <p><span className='bold-txt'>Currency:</span> {listPrice.currencyCode}</p>
-        {listPrice.isOnSale && <img className="on-sale-icon" src="/assets/BooksImages/onSale.png" alt="" />}
+        {listPrice.isOnSale && <img className="on-sale-icon" src="/assets/booksImages/onSale.png" alt="" />}
     </article>
 
 }
