@@ -82,7 +82,7 @@ export function BookDetails() {
                 <span className='bold-txt'>Authors:</span> {book.authors}
             </p>}
             {book.description && <LongTxt txt={book.description} />}
-            {book.listPrice.isOnSale && <img className="on-sale-icon" src="/assets/BooksImages/onSale.png" alt="" />}
+            {book.listPrice.isOnSale && <img className="on-sale-icon" src="assets/BooksImages/onSale.png" alt="" />}
             <button className='close'>
                 <Link to='/book'>X</Link>
             </button>
